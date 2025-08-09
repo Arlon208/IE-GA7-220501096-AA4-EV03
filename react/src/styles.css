@@ -1,0 +1,212 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Login */
+.login-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-header {
+  background-color: #54c79f;
+  height: 80px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: -100px;
+}
+
+.login-form {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login-form input {
+  width: 250px;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-login {
+  width: 260px;
+  background-color: #a8f0c6;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Menú Principal */
+.menu-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.menu-header {
+  background-color: #54c79f;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-small {
+  width: 80px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* #citas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+} */
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+.menu-card img {
+  width: 160px;
+}
+
+.logout-button {
+  width: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Encabezado */
+.header {
+  background-color: #54c79f;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+/* Botón atrás */
+.back {
+  margin: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.back img {
+  width: 50px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background: white;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos del formulario */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Botones */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-guardar {
+  background-color: #54c79f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 5px;
+}
+
+.btn-cancelar {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin-left: 5px;
+}
+
+.btn-guardar:hover {
+  background-color: #45a985;
+}
+
+.btn-cancelar:hover {
+  background-color: #aaa;
+}
