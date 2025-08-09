@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/veterinaria-logo.png";
-import backIcon from "../assets/atras.png"; // icono para regresar (puedes usar uno tuyo)
-import addIcon from "../assets/registrarCliente.png"; // ejemplo botón agregar cliente
-import listIcon from "../assets/buscarCliente.png"; // ejemplo botón ver lista
+import backIcon from "../assets/atras.png";
 import "../styles.css";
 
 export default function RegistrarCliente() {
   const navigate = useNavigate();
-
+  //Formulario
   const [formData, setFormData] = useState({
     cedula: "",
     nombre: "",
@@ -17,6 +15,7 @@ export default function RegistrarCliente() {
     direccion: "",
   });
 
+  //Los Handle son manejadores de eventos
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -25,12 +24,13 @@ export default function RegistrarCliente() {
     }));
   };
 
+  //Los Handle son manejadores de eventos
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Datos del cliente:", formData);
     // Aquí se enviaría la información a tu backend
     alert("Cliente registrado correctamente");
-    navigate("/menu"); // Redirige al menú después de guardar
+    navigate("/menu-clientes"); // Redirige al menú después de guardar
   };
 
   const handleCancel = () => {
